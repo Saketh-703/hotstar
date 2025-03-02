@@ -23,43 +23,49 @@
     }
 
     .sec-main {
-        width:100vw;    
+        width: 100vw;
         background-color: black;
         display: flex;
     }
 
-    .nav {
-        width: 10vw;
+    nav {
+        width: 5vw;
         height: 100vh;
-        background-color:black;
+        background-color: black;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         padding: 10px;
         position: fixed;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
     }
 
     .sec2-main {
-        width: 90vw;
+        width: 95vw;
         margin-left: auto;
+        float: right;
+    }
+
+    .sec2-1 {
+        width: 100%;
+        margin: auto;
+        display:flex;
+        justify-content: start;
+        align-items: center;
+        padding: 60px;
     }
 
     .sec2-2 {
         width: 100%;
-        position: sticky;
-        top: 0;
+        margin: auto;
     }
-
     .sec2-3 {
         width: 100%;
         position: relative;
         bottom: 600px;
-        left:0px;
-        right:0px; 
-        background: linear-gradient(to bottom,transparent,rgba(0, 0, 0, 0.911), black,black,black);
+        left: 0px;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.911), black, black, black);
     }
 
     .movie-text {
@@ -71,6 +77,8 @@
 
     .poster {
         width: 100%;
+        position: sticky;
+        top: 0;
     }
 
     .button {
@@ -87,7 +95,6 @@
 
     .img1 {
         width: 150px;
-
     }
 
     .logo {
@@ -117,7 +124,7 @@
         width: 100%;
         display: flex;
         overflow: scroll;
-        padding: 15px;
+        padding: 20px;
     }
 
     .boxes::-webkit-scrollbar {
@@ -130,12 +137,13 @@
         margin-right: 5px;
         border-radius: 7px;
     }
-    .box:hover
-    {
+
+    .box:hover {
         cursor: pointer;
         scale: 1.05;
         transition: 0.5s all ease;
     }
+
     .ost {
         width: 100%;
         border-radius: 7%;
@@ -145,7 +153,7 @@
 <body>
     <div class="sec-main">
         <!--sec1-->
-        <div class="nav">
+        <nav>
             <img src="logo.png" class="logo">
             <div class="icons">
                 <i class="fa-solid fa-house icon"></i>
@@ -155,206 +163,225 @@
                 <i class="fa-solid fa-video icon"></i>
                 <i class="fa-solid fa-user icon"></i>
             </div>
-        </div>
+        </nav>
         <div class="sec2-main">
+            <div class="sec2-1">
+                <img src="main.png" style="width:500px;">
+                <div class="main-delails p-2">
+                    <div class="p-2" style="width:420px;">
+                        <div class="d-flex ">
+                        <img src="jiostar.png" style="width: 50px; height: 50px; border-radius: 5px;">
+                        <div class="px-2">
+                        <p class="text-white my-0 fw-bolder">Daredevil</p>
+                        <p class="text-white my-0">Streaming From March 5</p>
+                        </div>
+                        </div>
+                        <p class="text-white my-3">Daredevil's secret life is on the line in this gripping superhero drama !</p>
+                        <button type="button" class="btn btn-secondary" style="width:200px;">Watch now</button>
+                    </div>
+                </div>
+
+            </div>
             <div class="sec2-2">
                 <img src="poster.png" class="poster">
-            </div>
-            <div class="sec2-3">
-                <div class="movie-text">
-                    <img src="movie-title.png" class="img1">
-                    <h5 class="text-primary my-2">New Release</h5>
-                    <h5 class="text-white my-2">2025 1 season 7 languages</h5>
-                    <p class="text-secondary fw-normal">Vired is ready to build his dream house. But is he mally to face the
-                        hurdes in his path?</p>
-                    <h5 class="text-white mb-3"> Romance | comedy</h5>
-                    <button class="button text-white my-2"><i class="fa-solid fa-play mx-2"></i> Watch now</button>
-                </div>
-                <h3 class="text-white mx-4">Trending Now</h3>
-                <div class="boxes">
-                    <div class="box">
-                        <img src="1.png" class="ost">
+                <div class="sec2-3">
+                    <div class="movie-text">
+                        <img src="movie-title.png" class="img1">
+                        <h5 class="text-primary my-2">New Release</h5>
+                        <h5 class="text-white my-2">2025 1 season 7 languages</h5>
+                        <p class="text-secondary fw-normal">Vired is ready to build his dream house. But is he mally to
+                            face
+                            the
+                            hurdes in his path?</p>
+                        <h5 class="text-white mb-3"> Romance | comedy</h5>
+                        <button class="button text-white my-2"><i class="fa-solid fa-play mx-2"></i> Watch now</button>
                     </div>
-                    <div class="box">
-                        <img src="2.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="3.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="4.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="5.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="6.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="7.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="8.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="9.png" class="ost">
-                    </div>
+                    <h3 class="text-white mx-4">Trending Now</h3>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="1.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="2.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="3.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="4.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="5.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="6.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="7.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="8.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="9.png" class="ost">
+                        </div>
 
-                </div>
-                <h3 class="text-white mx-4">Telugu</h3>
-                <div class="boxes">
-                    <div class="box">
-                        <img src="10.png" class="ost">
                     </div>
-                    <div class="box">
-                        <img src="11.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="12.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="13.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="14.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="15.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="16.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="18.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="1.png" class="ost">
-                    </div>
+                    <h3 class="text-white mx-4">Telugu</h3>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="10.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="11.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="12.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="13.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="14.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="15.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="16.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="18.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="1.png" class="ost">
+                        </div>
 
-                </div>
-                <h3 class="text-white mx-4">Hindi</h3>
-                <div class="boxes">
-                    <div class="box">
-                        <img src="18.png" class="ost">
                     </div>
-                    <div class="box">
-                        <img src="17.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="15.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="16.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="8.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="9.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="7.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="13.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="11.png" class="ost">
-                    </div>
+                    <h3 class="text-white mx-4">Hindi</h3>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="18.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="17.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="15.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="16.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="8.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="9.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="7.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="13.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="11.png" class="ost">
+                        </div>
 
-                </div>
-                <h3 class="text-white mx-4">English</h3>
-                <div class="boxes">
-                    <div class="box">
-                        <img src="9.png" class="ost">
                     </div>
-                    <div class="box">
-                        <img src="8.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="16.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="13.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="5.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="16.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="7.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="8.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="9.png" class="ost">
-                    </div>
+                    <h3 class="text-white mx-4">English</h3>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="9.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="8.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="16.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="13.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="5.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="16.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="7.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="8.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="9.png" class="ost">
+                        </div>
 
-                </div>
-                <h3 class="text-white mx-4">Drama</h3>
-                <div class="boxes">
-                    <div class="box">
-                        <img src="12.png" class="ost">
                     </div>
-                    <div class="box">
-                        <img src="15.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="11.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="10.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="9.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="8.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="4.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="5.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="2.png" class="ost">
-                    </div>
+                    <h3 class="text-white mx-4">Drama</h3>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="12.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="15.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="11.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="10.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="9.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="8.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="4.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="5.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="2.png" class="ost">
+                        </div>
 
-                </div>
-                <h3 class="text-white mx-4">Action</h3>
-                <div class="boxes">
-                    <div class="box">
-                        <img src="1.png" class="ost">
                     </div>
-                    <div class="box">
-                        <img src="2.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="3.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="4.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="5.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="6.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="7.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="8.png" class="ost">
-                    </div>
-                    <div class="box">
-                        <img src="9.png" class="ost">
-                    </div>
+                    <h3 class="text-white mx-4">Action</h3>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="1.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="2.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="3.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="4.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="5.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="6.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="7.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="8.png" class="ost">
+                        </div>
+                        <div class="box">
+                            <img src="9.png" class="ost">
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>
