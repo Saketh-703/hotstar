@@ -20,7 +20,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        overflow: none;
     }
 
     .sec-main {
@@ -30,32 +29,32 @@
     }
 
     .nav {
-        min-width: 4vw;
+        width: 10vw;
         height: 100vh;
         background-color:black;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
-        position: sticky;
+        position: fixed;
         top:0;
         left:0;
     }
 
     .sec2-main {
-        width: 95vw;
-        display: flex;
-        flex-direction: column;
-        
+        width: 90vw;
+        margin-left: auto;
     }
 
     .sec2-2 {
-        width: 95vw;
+        width: 100%;
         position: sticky;
         top: 0;
     }
 
     .sec2-3 {
-        width: 95vw;
+        width: 100%;
         position: relative;
         bottom: 600px;
         left:0px;
@@ -100,7 +99,7 @@
         display: flex;
         flex-direction: column;
         padding: 5px;
-        margin-top: 25vh;
+        margin-top: 200px;
         gap: 40px;
     }
 
@@ -115,7 +114,7 @@
     }
 
     .boxes {
-        width: 95vw;
+        width: 100%;
         display: flex;
         overflow: scroll;
         padding: 15px;
@@ -126,7 +125,7 @@
     }
 
     .box {
-        min-width: 20vw;
+        min-width: 200px;
         margin-left: 5px;
         margin-right: 5px;
         border-radius: 7px;
@@ -138,7 +137,7 @@
         transition: 0.5s all ease;
     }
     .ost {
-        width: 16vw;
+        width: 100%;
         border-radius: 7%;
     }
 </style>
